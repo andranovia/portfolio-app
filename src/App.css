@@ -1,42 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+::-webkit-scrollbar {
+  display: none;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+:root
+{
+    --bright: #F8F1F1;
+    --bright-second : #E8AA42;
+    --dark : #025464;
+    --middle : #27374D;
+    --blueCard : #DDF8FE;
+    --grey:  #272e38;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --hovertext : #526D82;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.App{
+  
+    overflow: hidden;
+    color: white;    
+
+}
+
+.button {
+    background: rgb(2, 2, 2);
+    border-radius: 34px;
+    border: none;
+    color: rgb(239, 234, 234);
+    font-size: 16px;
+    padding: 11px 26px 11px 26px; 
+    margin-left: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .button:hover {
+    background: white;
+    cursor: pointer;
+
+    color: var(--middle);
   }
-}
+  
+ 
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+  
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
